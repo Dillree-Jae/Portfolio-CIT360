@@ -2,6 +2,7 @@ package SandboxCode;
 import java.util.HashMap; //Must be included to use the HashMap
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 // This is an example of HashMap use
@@ -60,5 +61,9 @@ class SampleMap {
         }
         
         //how to iterate through TreeMap and Display the key and mapped values
+        Set<Integer> keys = treeRaceResults.keySet();
+        for(Integer key: keys){
+            System.out.println("Value of "+key+" is: "+treeRaceResults.get(key));
+        }
     }
 }
