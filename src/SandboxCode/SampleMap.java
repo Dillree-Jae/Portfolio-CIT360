@@ -36,6 +36,7 @@ class SampleMap {
         treeRaceResults.put(10, "Ted");
         
         //how to iterate through HashMap and Display the key and mapped values
+        System.out.println("Output for HashMap sample:");
         
         //Method #1: Using EntrySet and advanced for loop
         System.out.println("Using EntrySet");
@@ -61,6 +62,7 @@ class SampleMap {
         }
         
         //how to iterate through TreeMap and Display the key and mapped values
+        System.out.println("Output for TreeMap sample:");
         Set<Integer> keys = treeRaceResults.keySet();
         for(Integer key: keys){
             System.out.println("Value of "+key+" is: "+treeRaceResults.get(key));
