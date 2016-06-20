@@ -5,5 +5,12 @@
       <meta attribute="class-description">
           This class is an example of using hibernate to map racer info from a database table RACERS to the java class HibernateRacers
       </meta>
-      
+      <id name="id" type="int" column="id">
+         <generator class="native"/>
+      </id>
+      <property name="firstName" column="first_name" type="string"/>
+      <property name="lastName" column="last_name" type="string"/>
+      <property name="elapsedTime" column="elapsed_time" type="int"/>
+      <property name="position" column="position" type="int"/>
+ </class>
 </hibernate-mapping>
