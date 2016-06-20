@@ -20,10 +20,10 @@ public class JUnitAssertTest {
     @Test
     public void testAdd() {
         System.out.println("add");
-        int one = 7;
+        int one = 6;
         int two = 5;
         JUnitAssert instance = new JUnitAssert();
-        int expResult = 12;
+        int expResult = 11;
         int result = instance.add(one, two);
         assertEquals(expResult, result);
     }
