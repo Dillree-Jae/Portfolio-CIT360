@@ -5,24 +5,22 @@
  */
 package SandboxCode;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Jae Dillree
  */
-public class Racers {
+public class Racers implements Serializable {
    private int id;
    private String firstName; 
    private String lastName;   
-   private int elapsedTime; 
+   private double elapsedTime; 
    private int position; 
 
-   public Racers(String fname, String lname, int time, int pos) {
-      this.firstName = fname;
-      this.lastName = lname;
-      this.elapsedTime = time;
-      this.position= pos;
-   }
-   
+    Racers() {
+    }
+
    public int getId() {
       return id;
    }
@@ -42,10 +40,10 @@ public class Racers {
    public void setLastName( String last_name ) {
       this.lastName = last_name;
    }
-   public int getElapsedTime() {
+   public double getElapsedTime() {
       return elapsedTime;
    }
-   public void setElapsedTime( int elapsedTime ) {
+   public void setElapsedTime(double elapsedTime ) {
       this.elapsedTime = elapsedTime;
    }
 public int getPosition() {
@@ -54,4 +52,12 @@ public int getPosition() {
    public void setPosition( int position ) {
       this.position = position;
    }
+
+    public void displayRacer() {
+        System.out.print("ID:" + this.id);
+        System.out.print("First Name:" + this.firstName);
+        System.out.print("Last Name:" + this.lastName);
+        System.out.print("Elapsed Time:" + this.elapsedTime);
+        System.out.print("Position:" + this.position);
+    }
 }
