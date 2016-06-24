@@ -9,6 +9,6 @@ public class ThreadExample extends Thread {
         System.out.println("Thread is now running...");
     }
     public static void main(String[] args){
-        SomeClass.start(); //creates a new thread and makes it runnable
+        (new ThreadExample()).start(); //creates a new thread and makes it runnable
     }
 }

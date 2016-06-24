@@ -10,7 +10,6 @@ public class ThreadExample2 implements Runnable {
      System.out.println("Thread is now running..");  
    }  
    public static void main(String[] args) {
-     Thread t = new Thread(new ThreadExample2());
-     t.start();
+     (new Thread(new ThreadExample2())).start();
 }
 }
